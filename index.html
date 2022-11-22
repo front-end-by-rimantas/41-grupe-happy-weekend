@@ -22,15 +22,28 @@
             width: 800px;
             margin-top: 40px;
             margin-left: calc((100% - 800px) / 2);
+            background-color: yellow;
         }
 
         header>img {
-            width: 100px;
+            height: 40px;
             float: left;
         }
 
         header>nav {
             float: right;
+        }
+
+        nav>a {
+            margin-left: 50px;
+            font-family: Tahoma;
+            font-size: 18px;
+            text-decoration: none;
+            color: #3F4371;
+        }
+
+        nav>a:first-child {
+            margin-left: 0;
         }
 
         main {
@@ -52,11 +65,15 @@
     </style>
 </head>
 
-<body>
-    <header>
+<body style="font-family: Verdana;">
+    <header style="font-family: Arial;">
         <img src="./img/logo.png" alt="Logo">
-        <nav>
-            LINKS
+        <nav style="font-family: monospace;">
+            <a href="#">Home</a>
+            <a href="#">Project</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
         </nav>
     </header>
 
