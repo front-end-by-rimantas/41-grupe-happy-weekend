@@ -3,24 +3,24 @@ body {
         sans-serif;
 }
 
-header {
+.main-header {
     display: inline-block;
     width: 800px;
     margin-top: 40px;
     margin-left: calc((100% - 800px) / 2);
 }
 
-header > img {
+.logo {
     height: 40px;
     float: left;
 }
 
-header > nav {
+.main-nav {
     float: right;
     margin-top: 3.8px;
 }
 
-nav > a {
+.main-nav > .link {
     display: inline-block;
     padding: 0.3em;
     padding-left: 0.7em;
@@ -36,11 +36,11 @@ nav > a {
     transition: all 0.5s;
 }
 
-nav > a:first-child {
+.main-nav > .link:first-child {
     margin-left: 0;
 }
 
-nav > a:hover {
+.main-nav > .link:hover {
     border-color: #3f4371;
 }
 
@@ -51,56 +51,58 @@ main {
     margin-left: calc((100% - 800px) / 2);
 }
 
-main > div {
+.left-column {
     width: 35%;
     float: left;
 }
 
-h1 {
+.main-title {
     margin: 0;
     font-size: 55px;
     text-transform: uppercase;
     color: #3f4371;
 }
 
-h1 > span {
+.main-title > span {
     font-size: 45px;
 }
 
-p {
+.description {
     font-size: 18px;
     line-height: 1.3em;
     letter-spacing: 0.05em;
     word-spacing: 0.3em;
 }
 
-main > div > a {
+.btn {
     display: inline-block;
     padding: 0.5em;
     padding-left: 3em;
     padding-right: 3em;
+    font-family: inherit;
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
     background-color: #3f4371;
     border-radius: 0.3em;
+    border: none;
     box-shadow: 0px 0.5em 0.2em -0.45em #888;
     transition: all 1s;
 }
 
-main > div > a:hover {
+.btn:hover {
     box-shadow: 0px 0.6em 0.4em -0.5em #555;
 }
 
-div > div {
+.socials {
     margin-top: 50px;
 }
 
-div > div > a {
+.socials > .icon {
 }
 
-main > img {
+.right-column {
     width: 60%;
     float: right;
 }
